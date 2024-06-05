@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		2601036A2C0CB33F001A73E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260103692C0CB33F001A73E5 /* AppDelegate.swift */; };
 		2601036C2C0CB33F001A73E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601036B2C0CB33F001A73E5 /* SceneDelegate.swift */; };
-		2601036E2C0CB33F001A73E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601036D2C0CB33F001A73E5 /* ViewController.swift */; };
+		2601036E2C0CB33F001A73E5 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601036D2C0CB33F001A73E5 /* GetStartedViewController.swift */; };
 		260103712C0CB33F001A73E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2601036F2C0CB33F001A73E5 /* Main.storyboard */; };
 		260103732C0CB341001A73E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260103722C0CB341001A73E5 /* Assets.xcassets */; };
 		260103762C0CB341001A73E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 260103742C0CB341001A73E5 /* LaunchScreen.storyboard */; };
+		2601037F2C10CC97001A73E5 /* UITapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601037E2C10CC96001A73E5 /* UITapGestureRecognizer.swift */; };
+		260103822C10CD25001A73E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260103812C10CD25001A73E5 /* LoginViewController.swift */; };
+		260103842C10D09E001A73E5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260103832C10D09E001A73E5 /* OnboardingViewController.swift */; };
+		2601038A2C10E310001A73E5 /* FirstOnBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260103892C10E310001A73E5 /* FirstOnBView.swift */; };
+		2601038C2C10E815001A73E5 /* SecondOnBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601038B2C10E815001A73E5 /* SecondOnBView.swift */; };
+		2601038E2C10E854001A73E5 /* ThirdOnBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601038D2C10E854001A73E5 /* ThirdOnBView.swift */; };
+		260103902C10E877001A73E5 /* FourthOnBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601038F2C10E877001A73E5 /* FourthOnBView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		260103662C0CB33F001A73E5 /* Recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		260103692C0CB33F001A73E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2601036B2C0CB33F001A73E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2601036D2C0CB33F001A73E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2601036D2C0CB33F001A73E5 /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
 		260103702C0CB33F001A73E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		260103722C0CB341001A73E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		260103752C0CB341001A73E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		260103772C0CB341001A73E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2601037E2C10CC96001A73E5 /* UITapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizer.swift; sourceTree = "<group>"; };
+		260103812C10CD25001A73E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		260103832C10D09E001A73E5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		260103892C10E310001A73E5 /* FirstOnBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnBView.swift; sourceTree = "<group>"; };
+		2601038B2C10E815001A73E5 /* SecondOnBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondOnBView.swift; sourceTree = "<group>"; };
+		2601038D2C10E854001A73E5 /* ThirdOnBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdOnBView.swift; sourceTree = "<group>"; };
+		2601038F2C10E877001A73E5 /* FourthOnBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthOnBView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,38 @@
 		260103682C0CB33F001A73E5 /* Recipe */ = {
 			isa = PBXGroup;
 			children = (
+				260103802C10CCEC001A73E5 /* Onboarding */,
+				2601037D2C10CC87001A73E5 /* Extensions */,
 				260103692C0CB33F001A73E5 /* AppDelegate.swift */,
 				2601036B2C0CB33F001A73E5 /* SceneDelegate.swift */,
-				2601036D2C0CB33F001A73E5 /* ViewController.swift */,
 				2601036F2C0CB33F001A73E5 /* Main.storyboard */,
 				260103722C0CB341001A73E5 /* Assets.xcassets */,
 				260103742C0CB341001A73E5 /* LaunchScreen.storyboard */,
 				260103772C0CB341001A73E5 /* Info.plist */,
 			);
 			path = Recipe;
+			sourceTree = "<group>";
+		};
+		2601037D2C10CC87001A73E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2601037E2C10CC96001A73E5 /* UITapGestureRecognizer.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		260103802C10CCEC001A73E5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2601036D2C0CB33F001A73E5 /* GetStartedViewController.swift */,
+				260103812C10CD25001A73E5 /* LoginViewController.swift */,
+				260103832C10D09E001A73E5 /* OnboardingViewController.swift */,
+				260103892C10E310001A73E5 /* FirstOnBView.swift */,
+				2601038B2C10E815001A73E5 /* SecondOnBView.swift */,
+				2601038D2C10E854001A73E5 /* ThirdOnBView.swift */,
+				2601038F2C10E877001A73E5 /* FourthOnBView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2601036E2C0CB33F001A73E5 /* ViewController.swift in Sources */,
+				2601036E2C0CB33F001A73E5 /* GetStartedViewController.swift in Sources */,
+				260103842C10D09E001A73E5 /* OnboardingViewController.swift in Sources */,
+				2601037F2C10CC97001A73E5 /* UITapGestureRecognizer.swift in Sources */,
+				2601038C2C10E815001A73E5 /* SecondOnBView.swift in Sources */,
 				2601036A2C0CB33F001A73E5 /* AppDelegate.swift in Sources */,
+				2601038E2C10E854001A73E5 /* ThirdOnBView.swift in Sources */,
+				260103822C10CD25001A73E5 /* LoginViewController.swift in Sources */,
+				260103902C10E877001A73E5 /* FourthOnBView.swift in Sources */,
 				2601036C2C0CB33F001A73E5 /* SceneDelegate.swift in Sources */,
+				2601038A2C10E310001A73E5 /* FirstOnBView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
