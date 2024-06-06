@@ -33,8 +33,8 @@ final class OnboardingViewController: UIViewController {
         let pageControl = UIPageControl()
         pageControl.numberOfPages = 4
         pageControl.currentPage = 0
-        pageControl.currentPageIndicatorTintColor = UIColor(named: "Primary")
-        pageControl.pageIndicatorTintColor = UIColor.lightGray.withAlphaComponent(0.8)
+        pageControl.pageIndicatorTintColor = .lightGrey
+        pageControl.currentPageIndicatorTintColor = .primary
         return pageControl
     }()
     
@@ -120,7 +120,6 @@ final class OnboardingViewController: UIViewController {
             scrollView.bottomAnchor.constraint(equalTo: pageControl.topAnchor, constant: -16),
             
             pageControl.bottomAnchor.constraint(equalTo: nextButton.topAnchor, constant: -16),
-            pageControl.widthAnchor.constraint(equalToConstant: 72),
             pageControl.heightAnchor.constraint(equalToConstant: 12),
             pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
@@ -183,6 +182,8 @@ extension OnboardingViewController: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let pageNumber = round(scrollView.contentOffset.x / scrollView.frame.size.width)
         pageControl.currentPage = Int(pageNumber)
+        print("AAAAAAAAAAa")
+        print(pageControl.currentPage)
         toggleButtons()
     }
 }
