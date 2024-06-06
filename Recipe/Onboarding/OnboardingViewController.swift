@@ -100,7 +100,6 @@ final class OnboardingViewController: UIViewController {
         scrollView.delegate = self
         let views: [UIView] = [FirstOnBView(), SecondOnBView(), ThirdOnBView(), FourthOnBView()]
         setupSlideScrollView(slides: views)
-        scrollView.isPagingEnabled = true
         
     }
     
@@ -158,7 +157,7 @@ final class OnboardingViewController: UIViewController {
     
     private func setupSlideScrollView(slides : [UIView]) {
         scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: scrollView.frame.height)
-//        scrollView.isPagingEnabled = true
+        scrollView.isPagingEnabled = true
         
         for i in 0 ..< slides.count {
             slides[i].frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width, height: 300)
