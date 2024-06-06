@@ -21,6 +21,9 @@
 		2601038E2C10E854001A73E5 /* ThirdOnBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601038D2C10E854001A73E5 /* ThirdOnBView.swift */; };
 		260103902C10E877001A73E5 /* FourthOnBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601038F2C10E877001A73E5 /* FourthOnBView.swift */; };
 		260103932C11A492001A73E5 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260103922C11A492001A73E5 /* PhoneView.swift */; };
+		260103952C11F2DF001A73E5 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260103942C11F2DF001A73E5 /* BottomView.swift */; };
+		260103972C11F6A9001A73E5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260103962C11F6A9001A73E5 /* RegisterViewController.swift */; };
+		260103992C11FF01001A73E5 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260103982C11FF01001A73E5 /* Checkbox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		2601038D2C10E854001A73E5 /* ThirdOnBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdOnBView.swift; sourceTree = "<group>"; };
 		2601038F2C10E877001A73E5 /* FourthOnBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthOnBView.swift; sourceTree = "<group>"; };
 		260103922C11A492001A73E5 /* PhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
+		260103942C11F2DF001A73E5 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
+		260103962C11F6A9001A73E5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		260103982C11FF01001A73E5 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 				2601036D2C0CB33F001A73E5 /* GetStartedViewController.swift */,
 				260103812C10CD25001A73E5 /* LoginViewController.swift */,
 				260103832C10D09E001A73E5 /* OnboardingViewController.swift */,
+				260103962C11F6A9001A73E5 /* RegisterViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -111,6 +118,8 @@
 				2601038B2C10E815001A73E5 /* SecondOnBView.swift */,
 				260103892C10E310001A73E5 /* FirstOnBView.swift */,
 				260103922C11A492001A73E5 /* PhoneView.swift */,
+				260103942C11F2DF001A73E5 /* BottomView.swift */,
+				260103982C11FF01001A73E5 /* Checkbox.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -189,12 +198,15 @@
 				2601036E2C0CB33F001A73E5 /* GetStartedViewController.swift in Sources */,
 				260103842C10D09E001A73E5 /* OnboardingViewController.swift in Sources */,
 				2601037F2C10CC97001A73E5 /* UITapGestureRecognizer.swift in Sources */,
+				260103952C11F2DF001A73E5 /* BottomView.swift in Sources */,
+				260103992C11FF01001A73E5 /* Checkbox.swift in Sources */,
 				2601038C2C10E815001A73E5 /* SecondOnBView.swift in Sources */,
 				2601036A2C0CB33F001A73E5 /* AppDelegate.swift in Sources */,
 				2601038E2C10E854001A73E5 /* ThirdOnBView.swift in Sources */,
 				260103822C10CD25001A73E5 /* LoginViewController.swift in Sources */,
 				260103902C10E877001A73E5 /* FourthOnBView.swift in Sources */,
 				2601036C2C0CB33F001A73E5 /* SceneDelegate.swift in Sources */,
+				260103972C11F6A9001A73E5 /* RegisterViewController.swift in Sources */,
 				2601038A2C10E310001A73E5 /* FirstOnBView.swift in Sources */,
 				260103932C11A492001A73E5 /* PhoneView.swift in Sources */,
 			);
