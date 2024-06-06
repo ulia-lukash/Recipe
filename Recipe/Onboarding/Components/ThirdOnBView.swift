@@ -73,7 +73,7 @@ final class ThirdOnBView: UIView {
     }
     
     private func setUp() {
-        [label, view, imageView, markButton, padThailabel, textField, gradientView].forEach {
+        [label, view, imageView, markButton, padThailabel, textField].forEach {
             addSubview($0)
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
