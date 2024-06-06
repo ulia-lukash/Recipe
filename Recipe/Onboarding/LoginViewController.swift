@@ -77,6 +77,15 @@ final class LoginViewController: UIViewController {
         return checkbox
     }()
     
+    private lazy var forgotButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Forgot your password?", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 12, weight: .semibold)
+        button.titleLabel?.textAlignment = .center
+        return button
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,7 +100,7 @@ final class LoginViewController: UIViewController {
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
         
-        [emailLabel, emailField, passwordLabel, passwordField, checkbox].forEach {
+        [emailLabel, emailField, passwordLabel, passwordField, checkbox, forgotButton].forEach {
             formView.addSubview($0)
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
@@ -133,6 +142,11 @@ final class LoginViewController: UIViewController {
             checkbox.leadingAnchor.constraint(equalTo: formView.leadingAnchor, constant: 24),
             checkbox.heightAnchor.constraint(equalToConstant: 24),
             checkbox.widthAnchor.constraint(equalToConstant: 200),
+            
+            forgotButton.topAnchor.constraint(equalTo: checkbox.bottomAnchor, constant: 20),
+            forgotButton.leadingAnchor.constraint(equalTo: formView.leadingAnchor, constant: 24),
+            forgotButton.heightAnchor.constraint(equalToConstant: 22),
+            forgotButton.trailingAnchor.constraint(equalTo: formView.trailingAnchor, constant: -24),
             
             bottomView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             bottomView.trailingAnchor.constraint(equalTo: view.trailingAnchor),

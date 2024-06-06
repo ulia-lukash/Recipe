@@ -131,7 +131,7 @@ final class BottomView: UIView {
             viewController.modalPresentationStyle = .fullScreen
             delegate?.presentViewController(viewController)
         case .register:
-            let viewController = RegisterViewController()
+            let viewController = FirstPersonalizationController()
             viewController.modalPresentationStyle = .fullScreen
             delegate?.presentViewController(viewController)
         case .getStarted:
