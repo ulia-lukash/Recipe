@@ -25,6 +25,8 @@
 		260103972C11F6A9001A73E5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260103962C11F6A9001A73E5 /* RegisterViewController.swift */; };
 		260103992C11FF01001A73E5 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260103982C11FF01001A73E5 /* Checkbox.swift */; };
 		2601039C2C1234FD001A73E5 /* FirstPersonalizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601039B2C1234FD001A73E5 /* FirstPersonalizationController.swift */; };
+		2601039E2C14588E001A73E5 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601039D2C14588E001A73E5 /* ProgressView.swift */; };
+		260103A02C145DF7001A73E5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601039F2C145DF7001A73E5 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		260103962C11F6A9001A73E5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		260103982C11FF01001A73E5 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		2601039B2C1234FD001A73E5 /* FirstPersonalizationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPersonalizationController.swift; sourceTree = "<group>"; };
+		2601039D2C14588E001A73E5 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		2601039F2C145DF7001A73E5 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 				260103922C11A492001A73E5 /* PhoneView.swift */,
 				260103942C11F2DF001A73E5 /* BottomView.swift */,
 				260103982C11FF01001A73E5 /* Checkbox.swift */,
+				2601039D2C14588E001A73E5 /* ProgressView.swift */,
+				2601039F2C145DF7001A73E5 /* SearchBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -219,7 +225,9 @@
 				260103902C10E877001A73E5 /* FourthOnBView.swift in Sources */,
 				2601036C2C0CB33F001A73E5 /* SceneDelegate.swift in Sources */,
 				260103972C11F6A9001A73E5 /* RegisterViewController.swift in Sources */,
+				2601039E2C14588E001A73E5 /* ProgressView.swift in Sources */,
 				2601038A2C10E310001A73E5 /* FirstOnBView.swift in Sources */,
+				260103A02C145DF7001A73E5 /* SearchBar.swift in Sources */,
 				260103932C11A492001A73E5 /* PhoneView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
