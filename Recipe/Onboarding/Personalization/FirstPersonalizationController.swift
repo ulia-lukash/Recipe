@@ -19,6 +19,11 @@ final class FirstPersonalizationController: UIViewController {
     
     lazy private var progressView = ProgressView(step: 1)
     
+    lazy private var searchBar = SearchBar(text: "Cuisine Type:")
+    
+    let objects: [Category] = [Category(title: "Chinese", isUserFave: false), Category(title: "Mexican", isUserFave: true), Category(title: "Japanese", isUserFave: true), Category(title: "French", isUserFave: false), Category(title: "Thai", isUserFave: true), Category(title: "American", isUserFave: false), Category(title: "Greek", isUserFave: false), Category(title: "Mediterranean", isUserFave: true)]
+    lazy private var buttonCollection = PopularTable(objects: objects)
+    
     lazy private var nextButton: UIButton = {
         let button = UIButton()
         button.setTitle("Next", for: .normal)
@@ -52,7 +57,7 @@ final class FirstPersonalizationController: UIViewController {
     
     private func setUp() {
         view.backgroundColor = .white
-        [label, progressView, nextButton, skipButton].forEach {
+        [label, progressView, searchBar, buttonCollection, nextButton, skipButton].forEach {
             view.addSubview($0)
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
@@ -68,6 +73,17 @@ final class FirstPersonalizationController: UIViewController {
             progressView.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 24),
             progressView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             progressView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            progressView.heightAnchor.constraint(equalToConstant: 34),
+            
+            searchBar.topAnchor.constraint(equalTo: progressView.bottomAnchor, constant: 24),
+            searchBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            searchBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            searchBar.heightAnchor.constraint(equalToConstant: 80),
+
+            buttonCollection.topAnchor.constraint(equalTo: searchBar.bottomAnchor, constant: 20),
+            buttonCollection.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            buttonCollection.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            buttonCollection.heightAnchor.constraint(equalToConstant: 400),
             
             nextButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             nextButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
