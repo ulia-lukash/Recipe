@@ -1,14 +1,14 @@
 //
-//  FirstPersonalizationController.swift
+//  SecondPersonalizationController.swift
 //  Recipe
 //
-//  Created by Uliana Lukash on 06.06.2024.
+//  Created by Uliana Lukash on 23.06.2024.
 //
 
 import Foundation
 import UIKit
 
-final class FirstPersonalizationController: UIViewController {
+final class SecondPersonalizationController: UIViewController {
     
     lazy private var label: UILabel = {
         let label = UILabel()
@@ -17,9 +17,9 @@ final class FirstPersonalizationController: UIViewController {
         return label
     }()
     
-    lazy private var progressView = ProgressView(step: 1)
+    lazy private var progressView = ProgressView(step: 2)
     
-    lazy private var searchBar = SearchBar(text: "Cuisine Type:")
+    lazy private var searchBar = SearchBar(text: "Dietary Restrictions:")
     
     let objects: [Category] = []
     lazy private var buttonCollection = PopularTable(objects: objects)
@@ -62,8 +62,6 @@ final class FirstPersonalizationController: UIViewController {
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
         setConstraints()
-        self.navigationController?.navigationBar.tintColor = .black
-        self.navigationItem.backButtonTitle = ""
     }
     
     private func setConstraints() {
@@ -101,7 +99,7 @@ final class FirstPersonalizationController: UIViewController {
     }
     
     @objc private func nextButtonTapped() {
-        let viewController = SecondPersonalizationController()
+        let viewController = ThirdPersonalizationController()
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     

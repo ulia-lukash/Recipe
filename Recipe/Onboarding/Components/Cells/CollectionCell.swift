@@ -57,10 +57,10 @@ class CollectionCell: UICollectionViewCell, ReuseIdentifying {
         ])
     }
     
-    func setCell(title: String, isPicked: Bool) {
+    func setCell(title: String) {
         button.setTitle(title, for: .normal)
-        self.isPicked = isPicked
-        isPicked ? makeButtonActive() : makeButtonNotActive()
+//        self.isPicked = isPicked
+//        isPicked ? makeButtonActive() : makeButtonNotActive()
     }
     
     private func makeButtonActive() {

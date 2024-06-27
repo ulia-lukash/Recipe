@@ -1,14 +1,14 @@
 //
-//  FirstPersonalizationController.swift
+//  ThirdPersonalizationController.swift
 //  Recipe
 //
-//  Created by Uliana Lukash on 06.06.2024.
+//  Created by Uliana Lukash on 27.06.2024.
 //
 
 import Foundation
 import UIKit
 
-final class FirstPersonalizationController: UIViewController {
+final class ThirdPersonalizationController: UIViewController {
     
     lazy private var label: UILabel = {
         let label = UILabel()
@@ -17,36 +17,22 @@ final class FirstPersonalizationController: UIViewController {
         return label
     }()
     
-    lazy private var progressView = ProgressView(step: 1)
+    lazy private var progressView = ProgressView(step: 3)
     
-    lazy private var searchBar = SearchBar(text: "Cuisine Type:")
+    lazy private var searchBar = SearchBar(text: "Favorite Ingredient:")
     
     let objects: [Category] = []
     lazy private var buttonCollection = PopularTable(objects: objects)
     
-    lazy private var nextButton: UIButton = {
+    lazy private var startButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Next", for: .normal)
+        button.setTitle("Start Recipe Exploring!", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 17, weight: .bold)
         button.backgroundColor = UIColor(named: "Primary")
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 23
-        button.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
-        return button
-    }()
-    
-    lazy private var skipButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Skip", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 17, weight: .bold)
-        button.layer.masksToBounds = true
-        button.layer.cornerRadius = 23
-        button.layer.borderWidth = 2
-        button.layer.borderColor = UIColor(named: "LightGrey")?.cgColor
-        button.setTitleColor(UIColor(named: "LightGrey"), for: .normal)
-        button.addTarget(self, action: #selector(skipButtonTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(startButtonTapped), for: .touchUpInside)
         return button
     }()
 
@@ -57,13 +43,11 @@ final class FirstPersonalizationController: UIViewController {
     
     private func setUp() {
         view.backgroundColor = .white
-        [label, progressView, searchBar, buttonCollection, nextButton, skipButton].forEach {
+        [label, progressView, searchBar, buttonCollection, startButton].forEach {
             view.addSubview($0)
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
         setConstraints()
-        self.navigationController?.navigationBar.tintColor = .black
-        self.navigationItem.backButtonTitle = ""
     }
     
     private func setConstraints() {
@@ -87,25 +71,17 @@ final class FirstPersonalizationController: UIViewController {
             buttonCollection.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             buttonCollection.heightAnchor.constraint(equalToConstant: 400),
             
-            nextButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            nextButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            nextButton.heightAnchor.constraint(equalToConstant: 46),
-            nextButton.bottomAnchor.constraint(equalTo: skipButton.topAnchor, constant: -12),
-            
-            skipButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            skipButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            skipButton.heightAnchor.constraint(equalToConstant: 46),
-            skipButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            startButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            startButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            startButton.heightAnchor.constraint(equalToConstant: 46),
+            startButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             
         ])
     }
     
-    @objc private func nextButtonTapped() {
-        let viewController = SecondPersonalizationController()
-        self.navigationController?.pushViewController(viewController, animated: true)
-    }
-    
-    @objc private func skipButtonTapped() {
-        
+    @objc private func startButtonTapped() {
+        let viewController = TabBarController()
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true)
     }
 }

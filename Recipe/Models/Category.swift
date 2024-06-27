@@ -9,5 +9,4 @@ import Foundation
 
 struct Category: Codable {
     let title: String
-    let isUserFave: Bool
 }

@@ -77,8 +77,8 @@ extension PopularTable: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(indexPath: indexPath) as CollectionCell
         let title = objects?[indexPath.item].title.uppercased() ?? "BlahBlah".uppercased()
-        let isActive = objects?[indexPath.item].isUserFave ?? false
-        cell.setCell(title: title, isPicked: isActive)
+//        let isActive = objects?[indexPath.item].isUserFave ?? false
+        cell.setCell(title: title)
         return cell
     }
     

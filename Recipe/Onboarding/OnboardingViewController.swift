@@ -148,10 +148,16 @@ final class OnboardingViewController: UIViewController {
     @objc private func skipButtonTapped() {
         scrollView.contentOffset.x = view.frame.width * 3
         toggleButtons()
+        let defaults = UserDefaults.standard
+        defaults.set(true, forKey: "SkippedUnboarding")
     }
     
     @objc private func continueButtonTapped() {
-        
+        let defaults = UserDefaults.standard
+        defaults.set(true, forKey: "SkippedUnboarding")
+        let viewController = RegisterViewController()
+        viewController.modalPresentationStyle = .fullScreen
+        present(viewController, animated: true)
     }
     
     private func setupSlideScrollView(slides : [UIView]) {
